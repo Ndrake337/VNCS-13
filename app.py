@@ -4,4 +4,4 @@ application = Flask(__name__)
 
 @application.route('/', methods =['GET'])
 def home():
-    return "Seja Bem Vindo ao VNCS-13",200
+    return "Seja Bem Vindo ao VNCS-13"
