@@ -6,11 +6,11 @@ state = { "value" : 1}
 
 @application.route('/', methods =['GET'])
 def home():
-    return "Seja Bem Vindo ao VNCS-13",200
+    return "Seja Bem Vindo ao VNCS-13"
 
 @application.route('/GetState', methods =['GET'])
 def home():
-    return jsonify(state),200
+    return jsonify(state)
 
 @application.route('/AppChangeState', methods =['GET'])
 def AppChangeState():
@@ -19,11 +19,11 @@ def AppChangeState():
     else:
         state['value'] = 1
 
-    return jsonify(state),200
+    return jsonify(state)
 
 @application.route('/NodeChangeState', methods =['POST'])
 def NodeChangeState():
     data = request.get_json()
     state.update(data)
 
-    return jsonify(data),201
+    return jsonify(data)
