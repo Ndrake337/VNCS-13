@@ -9,7 +9,7 @@ def home():
     return "Seja Bem Vindo ao VNCS-13"
 
 @application.route('/GetState', methods =['GET'])
-def home():
+def GetState():
     return jsonify(state)
 
 @application.route('/AppChangeState', methods =['GET'])
